@@ -5,9 +5,9 @@ int main() {
     float nota, soma = 0, media;
 
     printf("Digite a quantidade de alunos na turma: ");
-    scanf("%d", &num_alunos);
+    scanf("%d", &n_alunos);
 
-    if (num_alunos <= 0) {
+    if (n_alunos <= 0) {
         printf("Quantidade de alunos invalida.\n");
         return 1; 
     }
@@ -15,7 +15,7 @@ int main() {
     for (int i = 1; i <= n_alunos; i++) {
         printf("Digite a nota do aluno %d: ", i);
         scanf("%f", &nota);
-        soma += nota; /
+        soma += nota;
     }
 
     media = soma / n_alunos;
